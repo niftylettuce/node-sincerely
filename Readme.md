@@ -1,5 +1,5 @@
 
-# node-sincerely
+# node-sincerely <sup>0.0.1</sup>
 
 Node.js library to access [Sincerely's Ship API](https://dev.sincerely.com/docs).
 
