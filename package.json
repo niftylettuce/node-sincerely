@@ -1,0 +1,24 @@
+{
+    "name": "sincerely"
+  , "description": "Node.js library for accessing Sincerely's Web API at <https://sites.google.com/a/sincerely.com/shiplib/web-api>"
+  , "version": "0.0.1"
+  , "author": "Nick Baugh <niftylettuce@gmail.com>"
+  , "contributors": [
+      { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
+    ]
+  , "keywords": [ "sincerely", "node-sincerely", "web", "postcard", "postagram", "api" ]
+  , "homepage": "https://github.com/niftylettuce/node-sincerely"
+  , "repository": {
+        "type": "git"
+      , "url": "https://github.com/niftylettuce/node-sincerely.git"
+    }
+  , "engines": {
+      "node": ">= 0.6.0"
+    }
+  , "main": "lib/main.js"
+  , "dependencies": {}
+  , "devDependencies": {
+     "vows": ">= 0.6.2"
+  }
+  , "scripts": { "test": "vows test/*" }
+}
