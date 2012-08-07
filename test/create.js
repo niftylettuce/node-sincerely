@@ -19,6 +19,7 @@ vows.describe('create').addBatch({
 
   'Upload an image and create the order for the postcard': {
     topic: function() {
+      var that = this;
       fs.readFile(Landscape6x4, function(err, data) {
         assert.isNull(err);
         assert.isDefined(data);
@@ -34,16 +35,15 @@ vows.describe('create').addBatch({
             , profilePhotoId: response.id
             , recipients: [
                 {
-                    id: 12345
-                  , name: "Matt Brezina"
-                  , email: "matt@sincerely.com"
-                  , company: "Sincerely, Inc."
-                  , street1: "800 Market St."
-                  , street2: "Floor 6"
-                  , city: "San Francisco"
-                  , state: "CA"
-                  , postalcode: "94102"
-                  , country: "United States"
+                    "name": "Matt Brezina"
+                  , "email": "matt@sincerely.com"
+                  , "company": "Sincerely, Inc."
+                  , "street1": "800 Market St."
+                  , "street2": "Floor 6"
+                  , "city": "San Francisco"
+                  , "state": "CA"
+                  , "postalcode": "94102"
+                  , "country": "United States"
                 }
               ]
             , sender: {
@@ -57,7 +57,7 @@ vows.describe('create').addBatch({
                 , postalcode: "95476-2222"
                 , country: "United States"
               }
-          }, this.callback);
+          }, that.callback);
         });
       });
     },

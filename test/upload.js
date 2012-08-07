@@ -19,12 +19,13 @@ vows.describe('upload').addBatch({
 
   'Upload a landscape image and return its photo ID': {
     topic: function() {
+      var that = this;
       fs.readFile(Landscape6x4, function(err, data) {
         assert.isNull(err);
         assert.isDefined(data);
         sincerely.upload({
           photo: new Buffer(data).toString('base64')
-        }, this.callback);
+        }, that.callback);
       });
     },
     'returns response with photo ID': function(err, response) {
@@ -36,12 +37,13 @@ vows.describe('upload').addBatch({
 
   'Upload a portrait image and return its photo ID': {
     topic: function() {
+      var that = this;
       fs.readFile(Portrait4x6, function(err, data) {
         assert.isNull(err);
         assert.isDefined(data);
         sincerely.upload({
           photo: new Buffer(data).toString('base64')
-        }, this.callback);
+        }, that.callback);
       });
     },
     'returns response with photo ID': function(err, response) {
