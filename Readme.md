@@ -37,7 +37,7 @@ fs.readFile(Landscape6x4, function(err, data) {
 
     // create a new order and mail the postcard
     sincerely.create({
-        message: 'These aren't the droids you're looking for.'
+        message: "These aren't the droids you're looking for."
       , frontPhotoId: response.id
       , profilePhotoId: response.id
       , recipients: [
