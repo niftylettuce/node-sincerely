@@ -1,6 +1,6 @@
 {
     "name": "sincerely"
-  , "description": "Node.js library for accessing Sincerely's Web API at <https://sites.google.com/a/sincerely.com/shiplib/web-api>"
+  , "description": "Node.js library for accessing Sincerely's Web API at <https://dev.sincerely.com/docs>"
   , "version": "0.0.1"
   , "author": "Nick Baugh <niftylettuce@gmail.com>"
   , "contributors": [
@@ -18,7 +18,7 @@
   , "main": "lib/main.js"
   , "dependencies": {}
   , "devDependencies": {
-     "vows": ">= 0.6.2"
+     "vows": ">= 0.6.3"
   }
   , "scripts": { "test": "vows test/*" }
 }
