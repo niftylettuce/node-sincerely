@@ -18,6 +18,9 @@ var sincerely    = require('sincerely')('your-app-key')
   , Landscape6x4 = path.join(__dirname, 'Landscape6x4.jpg')
   , Portrait4x6  = path.join(__dirname, 'Portrait4x6.jpg');
 
+// you could use the `async` module here to parallel
+//  load a `frontPhotoId` and a `profilePhotoId`
+
 // read the file as a base64 string
 fs.readFile(Landscape6x4, function(err, data) {
 
@@ -26,7 +29,7 @@ fs.readFile(Landscape6x4, function(err, data) {
 
   // upload an image asset so we can create a new postcard
   sincerely.upload({
-    photo: new Buffer(data).toString('base64') // can also be multi-part/formdata post with image data
+    photo: new Buffer(data).toString('base64')
   }, function(err, response) {
 
     // check for errors while uploading the image
