@@ -1,9 +1,11 @@
 
 # node-sincerely
 
-Node.js library to access [Sincerely's Web API](https://sites.google.com/a/sincerely.com/shiplib/web-api).
+Node.js library to access [Sincerely's Ship API](https://sites.google.com/a/sincerely.com/shiplib/web-api).
 
 ## Quick start
+
+
 
 ```bash
 npm install sincerely
@@ -13,7 +15,7 @@ npm install sincerely
 
 ```js
 
-var sincerely = require('sincerely')('your-app-key'');
+var sincerely = require('sincerely')('your-app-key');
 
 // wip
 ```
@@ -29,7 +31,7 @@ The callback is called with an error code if needed, and then the repsonse.
 * `sincerely.debug`
 * `sincerely.cancel`
 
-More information on the API is available at <https://sites.google.com/a/sincerely.com/shiplib/web-api>.
+More information on Sincerely's RESTful web api ("Ship API") is available at <https://sites.google.com/a/sincerely.com/shiplib/web-api>.
 
 ## Tests
 
