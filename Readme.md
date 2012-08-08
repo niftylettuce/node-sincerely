@@ -86,7 +86,7 @@ All methods take a `data` object as their first parameter and a `callback(err, r
 
 * `sincerely.create` - Create a new order for the purposes of mailing a physical print and returns success or error.
 * `sincerely.upload` - Uploads an image asset and returns an id that can be used when calling `sincerely.create`.
-* `sincerely.debug` - Outputs a print preview PDF showing you waht the final print will look like.  Please note that this should be used for debug purposes only and should not be output to the end user.
+* `sincerely.debug` - Outputs a print preview PDF showing you what the final print will look like.  Please note that this should be used for debug purposes only and should not be output to the end user.
 * `sincerely.cancel` - Cancel a print placed via the api before it ships.  Prints are usually sent to production 2-4 hours from initial creation.
 
 Documentation for these methods can be found at [Sincerely's RESTful web api ("Ship API")](https://dev.sincerely.com/docs).
