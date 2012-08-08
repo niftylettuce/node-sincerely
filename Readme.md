@@ -3,7 +3,7 @@
 
 Node.js library to access [Sincerely's Ship API](https://dev.sincerely.com/docs).
 
-## Quick start
+## Quick Start
 
 ```bash
 npm install sincerely
