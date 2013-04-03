@@ -1,5 +1,5 @@
 
-# node-sincerely <sup>0.0.1</sup>
+# node-sincerely <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-sincerely.svg)](https://npmjs.org/package/sincerely)</sup>
 
 Node.js library to access [Sincerely's Ship API](https://dev.sincerely.com/docs).
 
