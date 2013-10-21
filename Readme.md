@@ -1,3 +1,4 @@
+[![Gittip](http://badgr.co/gittip/niftylettuce.png)](https://www.gittip.com/niftylettuce/)
 
 # node-sincerely <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-sincerely.svg)](https://npmjs.org/package/sincerely)</sup>
 
